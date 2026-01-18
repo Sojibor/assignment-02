@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +10,100 @@
     <!--Tailwind CSS Script-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title> Assignment-02</title>
-</head>
-<body class="bg-purple-900 text-white">
-    <!--Header Section-->
-        <header class=" flex justify-around items-center m-auto pt-6 pb-6 border-b border-purple-400">
-            <div class="logo">
-                <h2 class="text-4xl font-extrabold" >Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span></h2>
+  </head>
+  <body class="text-white">
+    <!--Header Md to Big screen Section-->
+    <div class="hidden md:block">
+    <header class="flex justify-around items-center m-auto pt-6 pb-6 bg-blue-950 border-b border-purple-400">
+      <div class="logo">
+        <h2 class="text-4xl font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span>
+        </h2>
+      </div>
+      <div class="menu">
+        <ul class="flex gap-x-10">
+          <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium">
+            <a class="text-xl" href="#">About</a>
+          </li>
+          <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium">
+            <a class="text-xl" href="#">Episodes</a>
+          </li>
+          <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium">
+            <a class="text-xl" href="#">Host</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Btn p-1.5 px-3 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500">
+        <button>
+          <a class="text-xl" href="#">Subscribe </a>
+        </button>
+      </div>
+    </header>
+    </div>
+    <!--Mobile Menu-->
+    <div class="sm:hidden">
+        <header class="flex justify-around items-center m-auto pt-6 pb-6 bg-blue-950 border-b border-purple-400">
+      <div class="logo">
+        <h2 class="text-4xl font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span>
+        </h2>
+      </div>
+      <div class="menu">
+        <img src="assets/hamburger-menu.png" alt="">
+      </div>
+    </header>
+    </div>
+    <!--Hero Section-->
+    <div class="bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover bg-bottom flex m-auto min-h-10/12 lg:h-screen">
+      <div class="m-auto">
+        <div class="flex m-auto justify-center">
+          <div class="">
+            <div class="relative inline-block">
+              <div class="bg-[url(assets/hero-circle.png)] bg-no-repeat bg-auto bg-center">
+                <img class="p-30 lg:p-40 " src="assets/microphone.png" alt="">
+              </div>
+              <!-- NEW badge Add -->
+              <span class="absolute top-8 right-15 font-extrabold px-5 py-2  text-xl
+           bg-green-400 text-black
+           rounded-full">NEW</span>
             </div>
-            <div class="menu">
-                <ul class="flex gap-x-10">
-                    <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium"><a href="#">About</a></li>
-                    <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium"><a href="#">Episodes</a></li>
-                    <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium"><a href="#">Host</a></li>
-                </ul>
+          </div>
+        </div>
+        <h2 class="text-6xl text-center font-bold lg:m-2">TechWave</h2>
+        <p class="text-center m-3 text-xl">The daily close of tech insight, productivity hacks, and personal growth </p>
+        <div class="flex m-auto justify-center gap-5 pb-15">
+          <button>
+            <a class="flex gap-2 text-center text-xl p-1.5 px-3 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 " href="#">
+              <img src="assets/spotify.png" alt="">Listen On Spotify </a>
+          </button>
+          <button>
+            <a class="flex gap-2 text-center text-xl p-1.5 px-3 rounded-4xl border-green-400 border hover:bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 hover:border-1 hover:border-amber-500" href="#">
+              <img src="assets/message.png" alt="">Subscribe </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Section-->
+        <div class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-cover bg-bottom flex m-auto h-100">
+      <div class="m-auto">
+        <h2 class="text-5xl md:text-8xl text-center font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span></h2>
+        <div class="mt-2 mb-2 flex justify-around flex-wrap m-auto items-center">
+            <div class="f-item">
+                <button class="flex gap-2"><img src="assets/spotify.png" alt="">Spotify</button>
             </div>
-            <div class="Btn p-1.5 px-3 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500"><a href="#">Subscribe </a><i class="">i</i></div>
-        </header>
-        <!--Hero Section-->
-        
-</body>
+            <div class="f-item">
+                <button class="flex gap-2"><img src="assets/spotify.png" alt="">Spotify</button>
+            </div>
+            <div class="f-item">
+                <button class="flex gap-2"><img src="assets/spotify.png" alt="">Spotify</button>
+            </div>
+            <div class="f-item">
+                <button class="flex gap-2"><img src="assets/spotify.png" alt="">Spotify</button>
+            </div>
+        </div>
+        <div class="copyright text-center mt-2">
+            <p>©️ 2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+    </div>
+    </div>
+  </body>
 </html>
