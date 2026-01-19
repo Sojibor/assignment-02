@@ -9,47 +9,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Tailwind CSS Script-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tailwindhelpers.css">
     <title> Assignment-02</title>
   </head>
-  <body class="text-white font-inter">
+  <body class="text-white font-[inter]">
     <!--Header Md to Big screen Section-->
     <div class="hidden md:block">
-    <header class="flex justify-around items-center m-auto pt-6 pb-6 bg-blue-950 border-b border-purple-400">
-      <div class="logo">
-        <h2 class="text-5xl font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span>
-        </h2>
-      </div>
-      <div class="menu">
-        <ul class="flex gap-x-10">
-          <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium">
-            <a class="text-xl" href="#about">About</a>
-          </li>
-          <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium">
-            <a class="text-xl" href="#episodes">Episodes</a>
-          </li>
-          <li class="mx-2 hover:scale-110 hover:text-yellow-600 hover:font-medium">
-            <a class="text-xl" href="#host">Host</a>
-          </li>
-        </ul>
-      </div>
-      <div class="Btn p-1.5 px-3 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500">
-        <button>
-          <a class="text-l" href="#">Subscribe <i class="fa-solid fa-arrow-right"></i></a>
-        </button>
-      </div>
-    </header>
+      <header class="flex justify-around items-center m-auto pt-6 pb-6 bg-[#190A2D] border-b border-purple-700">
+        <div class="logo">
+          <h2 class="text-5xl font-extrabold">
+            <a href="#">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span></a>
+          </h2>
+        </div>
+        <div class="menu">
+          <ul class="flex gap-x-10">
+            <li class="mx-2 hover:scale-110 hover:text-amber-600 hover:font-medium">
+              <a class="text-xl" href="#about">About</a>
+            </li>
+            <li class="mx-2 hover:scale-110 hover:text-amber-600 hover:font-medium">
+              <a class="text-xl" href="#episodes">Episodes</a>
+            </li>
+            <li class="mx-2 hover:scale-110 hover:text-amber-600 hover:font-medium">
+              <a class="text-xl" href="#host">Host</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Btn p-3 px-5 rounded-4xl bg-gradient-to-tr from-amber-400 via-pink-500 to-purple-700   hover:scale-110">
+          <button>
+            <a class="text-xl" href="#">Subscribe <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </button>
+        </div>
+      </header>
     </div>
     <!--Mobile Menu-->
     <div class="sm:hidden">
-        <header class="flex justify-around items-center m-auto pt-6 pb-6 bg-blue-950 border-b border-purple-400">
-      <div class="logo">
-        <h2 class="text-4xl font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span>
-        </h2>
-      </div>
-      <div class="menu">
-        <img src="assets/hamburger-menu.png" alt="">
-      </div>
-    </header>
+      <header class="flex justify-around items-center m-auto pt-6 pb-6 bg-[#190A2D] border-b border-purple-700">
+        <div class="logo">
+          <h2 class="text-4xl font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span>
+          </h2>
+        </div>
+        <div class="menu">
+          <img src="assets/hamburger-menu.png" alt="">
+        </div>
+      </header>
     </div>
     <!--Hero Section-->
     <div class="bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover bg-bottom flex m-auto min-h-10/12 lg:h-screen">
@@ -67,191 +70,218 @@
             </div>
           </div>
         </div>
-        <h2 class="text-6xl text-center font-bold lg:m-2">TechWave</h2>
-        <p class="text-center m-3 text-l">Your daily close of tech insight, productivity hacks, and personal growth </p>
+        <h2 class="text-7xl text-center font-extrabold lg:m-2">TechWave</h2>
+        <p class="text-center m-3 text-l lg:text-xl ">Your daily close of tech insight, productivity hacks, and personal growth </p>
         <div class="flex m-auto justify-center gap-5 pb-15">
           <button>
-            <a class="flex gap-2 text-center text-l p-1.5 px-3 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-700 " href="#">
-              <img class="object-contain" src="assets/spotify.png" alt=""><p>Listen On Spotify</p> </a>
+            <a class="flex gap-2 text-center text-l p-3 px-5 rounded-4xl bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700 hover:border-2 border-green-400 hover:p-2.5 hover:px-4.5 hover:bg-none" href="#">
+              <img class="object-contain" src="assets/spotify.png" alt="">
+              <p class="lg:text-xl">Listen On Spotify</p>
+            </a>
           </button>
           <button>
-            <a class="flex gap-2 text-center text-l p-1.5 px-3 rounded-4xl border-green-400 border hover:bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-700 hover:border-1 hover:border-amber-500" href="#">
-              <img class="object-contain" class="" src="assets/message.png" alt=""><p class="text-green-400">Subscribe </p></a>
+            <a class="flex gap-2 text-center text-l p-2.5 px-5 rounded-4xl border-2 border-green-400 border hover:bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700 hover:border-2 hover:border-amber-500" href="#">
+              <img class="object-contain" class="" src="assets/message.png" alt="">
+              <p class="text-green-400 lg:text-xl">Subscribe </p>
+            </a>
           </button>
         </div>
       </div>
     </div>
-<!--About Podcast-->
-    <section id="about" class="bg-[#190A2D] pt-10 pb-10 min-w-4/5">
-        <div class="about m-auto max-w-4/5">
-            <h2 class="text-4xl font-bold text-center">About The Podcast</h2>
-            <p class="text-l text-center pt-5 pb-5">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</br>
-We break down complex topics into digestible insights, explore productivity strategies that actually work,</br>
-and share stories of personal growth from industry leaders.</br></br>
-Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
-<hr>
-<div class="mt-10">
-    <div class="grid lg:grid-cols-4 grid-cols-2 gap-2.5">
-        <div class="funbox-item text-center"><h2 class="text-4xl text-green-400 font-bold">150K+</h2><p class="tex-xl">MONTHLY LISTENERS</p></div>
-        <div class="funbox-item text-center"><h2 class="text-4xl text-green-400 font-bold">200+</h2><p class="tex-xl">EPISODES PUBLISHED</p></div>
-        <div class="funbox-item text-center"><h2 class="text-4xl text-green-400 font-bold">4.9★</h2><p class="tex-xl">AVERAGE RATING</p></div>
-        <div class="funbox-item text-center"><h2 class="text-4xl text-green-400 font-bold">50+</h2><p class="tex-xl">INDUSTRY EXPERTS</p></div>
-    </div>
-</div>
+    <!--About Podcast-->
+    <section id="about" class="bg-[#190A2D] pt-20 pb-20 min-w-4/5">
+      <div class="about m-auto max-w-4/5">
+        <h2 class="text-4xl lg:text-6xl font-bold text-center">About The Podcast</h2>
+        <p class="text-l lg:text-xl text-center pt-5 pb-10">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. </br> We break down complex topics into digestible insights, explore productivity strategies that actually work, </br> and share stories of personal growth from industry leaders. </br>
+          </br> Join thousands of young professionals and tech enthusiasts who start their day with TechWave. </p>
+        <hr>
+        <div class="mt-10">
+          <div class="grid lg:grid-cols-4 grid-cols-2 gap-2.5">
+            <div class="funbox-item text-center">
+              <h2 class="text-4xl font-extrabold lg:text-5xl text-green-400 font-bold">150K+</h2>
+              <p class="tex-xl">MONTHLY LISTENERS</p>
+            </div>
+            <div class="funbox-item text-center">
+              <h2 class="text-4xl font-extrabold lg:text-5xl text-green-400 font-bold">200+</h2>
+              <p class="tex-xl">EPISODES PUBLISHED</p>
+            </div>
+            <div class="funbox-item text-center">
+              <h2 class="text-4xl font-extrabold lg:text-5xl text-green-400 font-bold">4.9★</h2>
+              <p class="tex-xl">AVERAGE RATING</p>
+            </div>
+            <div class="funbox-item text-center">
+              <h2 class="text-4xl font-extrabold lg:text-5xl text-green-400 font-bold">50+</h2>
+              <p class="tex-xl">INDUSTRY EXPERTS</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-<!--Choose Section-->
-<section class="bg-[#190A2D] pt-10 pb-10">
-    <h2 class="text-center text-4xl font-bold pt-5 pb-10">Why Choose TechWave</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center m-auto max-w-4/5">
-        <div class="h-auto lg:h-110 row-span-2 chose-item bg-[#240C43] items-center p-4 rounded-2xl"><img src="assets/headphone.png" alt=""><h3 class="text-2xl font-bold">Premium Audio Quality</h3><p>Experience crystal-clear sound with
-professional-grade recording equipment and
-expert audio engineering. Every episode Is
-mastered for optimal listening across all
-devices and platforms</p></div>
-        <div class="h-50 col-span-2 chose-item bg-[#240C43]  p-4 rounded-2xl"><img src="assets/device.png" alt=""><h3 class="text-2xl font-bold">Mobile Friendly<h3>
-            <p>Listen on the go with seamless mobile
-experience and offline downloads.</p></div>
-        <div class="h-50 col-span-2 chose-item bg-[#240C43]  p-4 rounded-2xl"><img src="assets/location.png" alt=""><h3 class="text-2xl font-bold">Global Community</h3><p>Connect with tech enthusiasts from over
-countries worldwide.</p></div>
-        <div class="h-50 col-span-2 chose-item bg-[#240C43]  p-4 rounded-2xl"><img src="assets/zap-fast.png" alt=""><h3 class="text-2xl font-bold">Exclusive Interviews
-</h3><p>Get unprecedented access to industry tit
-startup founders, and tech visionaries. O
-host secures exclusive conversations you
-won't find anywhere else, diving deep int
-their journeys, failures, and success
-strategies.</p></div>
-        <div class="h-50 chose-item bg-[#240C43]  p-4 rounded-2xl"><img src="assets/headphone.png" alt=""><h3 class="text-2xl font-bold">Rich Resources</h3><p>Access show notes, transcripts, and addi
-learning materials for every episode.</p></div>
-
-    </div>
-</section>
-<!--Featured Episodes Section-->
-<section id="episodes" class="bg-[#190A2D] pt-10 pb-10">
-  <h2 class="text-center text-4xl font-bold pb-10">Featured Episodes</h2>
-  <div class="m-auto max-w-4/5">
-    <div class="episodes grid lg:grid-cols-3 gap-5">
-      <div class="epi-items bg-[#240C43] rounded-2xl">
-        <div class="relative rounded-lg overflow-hidden shadow-xl">
-          <!-- Video Element -->
-          <video id="videoPlayer" poster="assets/hog" class="w-full">
-            <source src="your-video-file.mp4" type="video/mp4"> Your browser does not support the video tag.
-          </video>
-          <!-- Play Button Overlay -->
-          <div id="playButtonOverlay" class="absolute inset-0 flex items-center justify-center cursor-pointer bg-black bg-opacity-30 hover:bg-opacity-50 transition duration-300">
-            <!-- Simple SVG Play Icon -->
-            <svg class="w-15 h-15 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-700" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
+    <!--Choose Section-->
+    <section class="bg-[#220D3C] pt-20 pb-20">
+      <h2 class="text-center text-4xl lg:text-6xl font-bold pt-5 pb-10">Why Choose TechWave</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center m-auto max-w-4/5">
+        <div class="items-center  grid lg:h-105 row-span-2 chose-item bg-[#290E4C]  p-4 rounded-2xl">
+          <div>
+            <img src="assets/headphone.png" alt="">
+            <h3 class="text-2xl lg:text-3xl  font-bold mt-2">Premium Audio Quality</h3>
+            <p class="lg:text-xl">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
           </div>
         </div>
-        <div class="info p-2">
-        <h2 class="text-3xl font-bold pt-5">The Future of AI in Everyday Life</h2>
-        <p class="text-l pt-2">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade...</p>
-        <div class="time flex pt-2  gap-2.5">
-          <img class="object-contain" src="assets/clock.png" alt="">
-          <p class="text-l font-bold text-green-400">42 min</p>
-        </div>
-        </div>
-      </div>
-      <div class="epi-items bg-[#240C43] rounded-2xl">
-        <div class="relative rounded-lg overflow-hidden shadow-xl">
-          <!-- Video Element -->
-          <video id="videoPlayer" poster="assets/hog" class="w-full">
-            <source src="your-video-file.mp4" type="video/mp4"> Your browser does not support the video tag.
-          </video>
-          <!-- Play Button Overlay -->
-          <div id="playButtonOverlay" class="absolute inset-0 flex items-center justify-center cursor-pointer bg-black bg-opacity-30 hover:bg-opacity-50 transition duration-300">
-            <!-- Simple SVG Play Icon -->
-            <svg class="w-15 h-15 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-700" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
+        <div class="items-center  grid lg:h-50 col-span-2 chose-item bg-[#290E4C]  p-4 rounded-2xl">
+          <div>
+            <img src="assets/device.png" alt="">
+            <h3 class="text-2xl lg:text-3xl  font-bold mt-2">Mobile Friendly</h3>
+            <p class="lg:text-xl">Listen on the go with seamless mobile experience and offline downloads.</p>
           </div>
         </div>
-        <div class="info p-2">
-        <h2 class="text-3xl font-bold pt-5">Building Better Habits for Remote 
-Work</h2>
-        <p class="text-l pt-2">Practical strategies for staying productive
-maintaining work-life balance in a ...</p>
-        <div class="time flex pt-2 gap-2.5">
-          <img class="object-contain" src="assets/clock.png" alt="">
-          <p class="text-l  font-bold text-green-500">42 min</p>
-        </div>
-        </div>
-      </div>
-      <div class="epi-items bg-[#240C43] rounded-2xl">
-        <div class="relative rounded-lg overflow-hidden shadow-xl">
-          <!-- Video Element -->
-          <video id="videoPlayer" poster="assets/hog" class="w-full">
-            <source src="your-video-file.mp4" type="video/mp4"> Your browser does not support the video tag.
-          </video>
-          <!-- Play Button Overlay -->
-          <div id="playButtonOverlay" class="absolute inset-0 flex items-center justify-center cursor-pointer bg-black bg-opacity-30 hover:bg-opacity-50 transition duration-300">
-            <!-- Simple SVG Play Icon -->
-            <svg class="w-15 h-15 rounded-4xl bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-700" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
+        <div class="items-center  grid lg:h-50 col-span-2 chose-item bg-[#290E4C]  p-4 rounded-2xl">
+          <div>
+            <img src="assets/location.png" alt="">
+            <h3 class="text-2xl lg:text-3xl  font-bold mt-2">Global Community</h3>
+            <p class="lg:text-xl">Connect with tech enthusiasts from over countries worldwide.</p>
           </div>
         </div>
-        <div class="info p-2">
-        <h2 class="text-3xl font-bold pt-5">Career Growth in Tech: A Roadmap</h2>
-        <p class="text-l pt-2">Expert advice on navigating your tech career
-from junior developer to senior leadership...</p>
-        <div class="time flex pt-2 gap-2.5">
-          <img class="object-contain" src="assets/clock.png" alt="">
-          <p class="text-l  font-bold text-green-500">42 min</p>
+        <div class="items-center  grid lg:h-50 col-span-2 chose-item bg-[#290E4C]  p-4 rounded-2xl">
+          <div>
+            <img src="assets/zap-fast.png" alt="">
+            <h3 class="text-2xl lg:text-3xl  font-bold mt-2">Exclusive Interviews </h3>
+            <p class="lg:text-xl">Get unprecedented access to industry tit startup founders, and tech visionaries. O host secures exclusive conversations you won't find anywhere else, diving deep int their journeys, failures, and success strategies.</p>
+          </div>
         </div>
+        <div class="items-center  grid h-50 chose-item bg-[#290E4C]  p-4 rounded-2xl">
+          <div>
+            <img src="assets/resource.png" alt="">
+            <h3 class="text-2xl lg:text-3xl  font-bold mt-2">Rich Resources</h3>
+            <p class="lg:text-xl">Access show notes, transcripts, and addi learning materials for every episode.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!--Featured Episodes Section-->
+    <section id="episodes" class="bg-[#190A2D] pt-30 pb-20">
+      <h2 class="text-center text-4xl lg:text-6xl font-bold pb-20">Featured Episodes</h2>
+      <div class="m-auto max-w-4/5">
+        <div class="episodes grid lg:grid-cols-3 gap-5">
+          <div class="epi-items bg-[#240C43] rounded-2xl">
+            <div class="relative rounded-lg overflow-hidden shadow-xl">
+              <!-- Video Element -->
+              <video controls id="videoPlayer" poster="assets/Rectangle1.png" class="w-full">
+                <source src="assets/support-videos.mp4" type="video/mp4"> Your browser does not support the video tag.
+              </video>
 
-
-<!--Meet the Host-->
-<section id="host">
-    <section class="bg-[#190A2D] pt-10 pb-10">
-       <h2 class="text-center text-4xl font-bold pb-10">Meet the Host</h2> 
-       <div class="m-auto bg-[#240C43] rounded-2xl max-w-4/5">
-    
-    <div class="grid lg:grid-cols-6 gap-5 items-center p-5">
-        <div class="gitem col-span-3 lg:col-span-1">
-        <div class="m-auto flex justify-center"><img src="assets/host.png" alt=""></div>
+            </div>
+            <div class="info p-2">
+              <h2 class="text-4xl font-semibold pt-5">The Future of AI in Everyday Life</h2>
+              <p class="text-l lg:text-xl pt-2">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade...</p>
+              <div class="time flex pt-2  gap-2.5">
+                <img class="object-contain" src="assets/clock.png" alt="">
+                <p class="text-l font-bold text-green-400">42 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="epi-items bg-[#240C43] rounded-2xl">
+            <div class="relative rounded-lg overflow-hidden shadow-xl">
+              <!-- Video Element -->
+              <video id="videoPlayer" poster="assets/Rectangle2.png" class="w-full">
+                <source src="assets/support-videos.mp4" type="video/mp4"> Your browser does not support the video tag.
+              </video>
+              <!-- Play Button Overlay -->
+              <div id="playButtonOverlay" class="absolute inset-0 flex items-center justify-center cursor-pointe">
+                <!-- Simple SVG Play Icon -->
+                <svg class="w-15 h-15 rounded-4xl bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <div class="info p-2">
+              <h2 class="text-4xl font-semibold pt-5">Building Better Habits for Remote Work</h2>
+              <p class="text-l lg:text-xl pt-2">Practical strategies for staying productive maintaining work-life balance in a ...</p>
+              <div class="time flex pt-2 gap-2.5">
+                <img class="object-contain" src="assets/clock.png" alt="">
+                <p class="text-l  font-bold text-green-500">42 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="epi-items bg-[#240C43] rounded-2xl">
+            <div class="relative rounded-lg overflow-hidden shadow-xl">
+              <!-- Video Element -->
+              <video id="videoPlayer" poster="assets/Rectangle3.png" class="w-full">
+                <source src="assets/support-videos.mp4" type="video/mp4"> Your browser does not support the video tag.
+              </video>
+              <!-- Play Button Overlay -->
+              <div id="playButtonOverlay" class="absolute inset-0 flex items-center justify-center cursor-pointer">
+                <!-- Simple SVG Play Icon -->
+                <svg class="w-15 h-15 rounded-4xl bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <div class="info p-2">
+              <h2 class="text-4xl font-semibold pt-5">Career Growth in Tech: A Roadmap</h2>
+              <p class="text-l lg:text-xl pt-2">Expert advice on navigating your tech career from junior developer to senior leadership...</p>
+              <div class="time flex pt-2 gap-2.5">
+                <img class="object-contain" src="assets/clock.png" alt="">
+                <p class="text-l  font-bold text-green-500">42 min</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="gitem col-span-3 lg:col-span-5">
-            <h2 class="text-center lg:text-left text-3xl font-bold pt-4 pb-4">Alex Kumar</h2>
-            <p class="text-center lg:text-left text-l">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years,
-working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech</p>
-<div class="social flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start pt-5 gap-4">
-    <a href="#"><img class="border p-2 rounded-2xl object-contain" src="assets/linkedin.png" alt=""></a>
-    <a href="#"><img class="border p-2 rounded-2xl object-contain" src="assets/x.png" alt=""></a>
-    <a href="#"><img class="border p-2 rounded-2xl object-contain" src="assets/instagram.png" alt=""></a>
-    <a href="#"><img class="border p-2 rounded-2xl object-contain" src="assets/youtube.png" alt=""></a>
-</div>
+      </div>
+    </section>
+
+    <!--Meet the Host-->
+    <section id="host">
+      <section class="bg-[#190A2D] pt-20 pb-20">
+        <h2 class="text-center text-4xl lg:text-6xl font-bold pb-10">Meet the Host</h2>
+        <div class="m-auto bg-[#240C43] rounded-2xl max-w-4/5">
+          <div class="grid lg:grid-cols-6 gap-5 items-center p-5">
+            <div class="gitem col-span-3 lg:col-span-1">
+              <div class="m-auto flex justify-center">
+                <img src="assets/host.png" alt="">
+              </div>
+            </div>
+            <div class="gitem col-span-3 lg:col-span-5">
+              <h2 class="text-center lg:text-left text-3xl font-bold pt-4 pb-4">Alex Kumar</h2>
+              <p class="text-center lg:text-left text-l lg:text-xl">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech</p>
+              <div class="social flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start pt-5 gap-4">
+                <a href="#">
+                  <img class="border p-2 rounded-2xl object-contain" src="assets/linkedin.png" alt="">
+                </a>
+                <a href="#">
+                  <img class="border p-2 rounded-2xl object-contain" src="assets/x.png" alt="">
+                </a>
+                <a href="#">
+                  <img class="border p-2 rounded-2xl object-contain" src="assets/instagram.png" alt="">
+                </a>
+                <a href="#">
+                  <img class="border p-2 rounded-2xl object-contain" src="assets/youtube.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-
-
-</section>
-    <!--Footer Section-->
-        <div class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-auto lg:bg-cover bg-bottom flex m-auto h-100">
-      <div class="m-auto">
-        <h2 class="text-6xl md:text-8xl text-center font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-400 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span></h2>
-<div class=" pt-3 pb-3 grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center align-middle mx-auto max-w-2xl">
-<button class="flex gap-2"><img class="object-contain" src="assets/spotify.png" alt="">Spotify</button> 
- <button class="flex gap-2"><img class="object-contain" src="assets/apple-podcast.png" alt="">Apple Podcasts</button>  
-<button class="flex gap-2"><img class="object-contain" src="assets/youtube-podcast.png" alt="">Youtube</button>
-<button class="flex gap-2"><img class="object-contain" src="assets/twitter.png" alt="">Twitter</button>
-</div>
-        <div class="copyright text-center mt-2">
+      </section>
+      <!--Footer Section-->
+      <div class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-auto lg:bg-cover bg-bottom flex m-auto h-100">
+        <div class="m-auto">
+          <h2 class="text-6xl md:text-8xl text-center font-extrabold">Tech <span class=" bg-gradient-to-tr from-amber-400 via-red-500 to-purple-700 text-transparent bg-clip-text inline-block">Wave</span>
+          </h2>
+          <div class=" pt-3 pb-3 grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center align-middle mx-auto max-w-2xl">
+            <button class="flex gap-2">
+              <img class="object-contain" src="assets/spotify.png" alt="">Spotify </button>
+            <button class="flex gap-2">
+              <img class="object-contain" src="assets/apple-podcast.png" alt="">Apple Podcasts </button>
+            <button class="flex gap-2">
+              <img class="object-contain" src="assets/youtube-podcast.png" alt="">Youtube </button>
+            <button class="flex gap-2">
+              <img class="object-contain" src="assets/twitter.png" alt="">Twitter </button>
+          </div>
+          <div class="copyright text-center mt-2">
             <p>©️ 2026 TechWave Podcast. All rights reserved.</p>
+          </div>
         </div>
-    </div>
-    </div>
-
-
-
+      </div>
 
   </body>
 </html>
